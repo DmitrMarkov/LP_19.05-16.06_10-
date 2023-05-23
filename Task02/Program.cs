@@ -12,9 +12,9 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 
 if (num1 > num2)
 {
-    Console.WriteLine($"Да, {num1} больше {num2}");
+    Console.WriteLine($"{num1} больше {num2}");
 }
 else
 {
-    Console.WriteLine($"Нет, {num1} меньше {num2}");
+    Console.WriteLine($"{num1} меньше {num2}");
 }    
