@@ -21,8 +21,8 @@ void PrintArray(int[] arr, string sep = ",")
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.Write ($"{arr[i]}{sep} ");
-        else Console.Write ($"{arr[i]}");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}{sep} ");
+        else Console.Write($"{arr[i]}");
     }
 }
 
@@ -33,11 +33,11 @@ int[] GetSumPositiveNegativElem(int[] arr)
 
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] > 0) sumPositive += arr[i];
+        if (arr[i] > 0) sumPositive += arr[i];
         else sumNegative += arr[i];
     }
 
-    return new int[] {sumPositive, sumNegative};
+    return new int[] { sumPositive, sumNegative };
 }
 
 int GetSumPositiveElem(int[] arr)
@@ -46,7 +46,7 @@ int GetSumPositiveElem(int[] arr)
 
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] > 0) sum += arr[i];
+        if (arr[i] > 0) sum += arr[i];
     }
     return sum;
 }
@@ -57,9 +57,9 @@ int GetSumNegativeElem(int[] arr)
 
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] < 0) sum += arr[i];
+        if (arr[i] < 0) sum += arr[i];
     }
-    
+
     return sum;
 }
 
