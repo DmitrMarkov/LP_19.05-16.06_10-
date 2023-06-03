@@ -14,7 +14,6 @@ double[] CreateArrayRndDouble(int size, int min, int max, int round = 2)
         double num = rnd.NextDouble() * (max - min) + min;
         arr[i] = Math.Round(num, round);
     }
-
     return arr;
 }
 
@@ -41,10 +40,10 @@ double findDifOfNum(double[] arr)
     double max = arr[0];
     for (int i = 0; i <= arr.Length - 2; i++)
     {
-        if (arr[i+1] < min) min = arr[i+1];
-        if (arr[i+1] > max) max = arr[i+1];
+        if (arr[i + 1] < min) min = arr[i + 1];
+        if (arr[i + 1] > max) max = arr[i + 1];
     }
-    return Math.Round(max - min, 2);;
+    return Math.Round(max - min, 2); ;
 }
 
 int numElArr = EnterNumber();
