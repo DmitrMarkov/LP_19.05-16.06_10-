@@ -42,7 +42,6 @@ int findEvenNum(int[] arr)
             count += arr[i];
         }
     }
-
     return count;
 }
 
