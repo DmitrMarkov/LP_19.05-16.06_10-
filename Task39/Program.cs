@@ -24,7 +24,6 @@ void PrintArray(int[] arr, string sep = ",")
     }
 }
 
-
 void ReverseArray(int[] arr)
 {
     for (int i = 0; i < arr.Length / 2; i++)
