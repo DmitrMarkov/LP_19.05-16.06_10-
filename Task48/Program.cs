@@ -7,14 +7,14 @@
 // 2 3 4 5
 
 int[,] CreateMatrixRndInt(int rows, int columns) // rows = 3, columns = 4
-{                                   
+{
     int[,] matrix = new int[rows, columns];
-    
+
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-             matrix[i, j] = i +j;
+            matrix[i, j] = i + j;
         }
     }
     return matrix;
@@ -26,7 +26,7 @@ void PrintMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-             Console.Write($"{matrix[i, j], 6}");
+            Console.Write($"{matrix[i, j],6}");
         }
         Console.WriteLine();
     }
