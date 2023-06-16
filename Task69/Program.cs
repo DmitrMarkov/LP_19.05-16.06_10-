@@ -13,13 +13,13 @@ int EnterNumber(string message)
 
 int Exponentiation(int number, int exp)
 {
-     if (exp == 0) return 1;
-     return number * Exponentiation(number, exp - 1);
+    if (exp == 0) return 1;
+    return number * Exponentiation(number, exp - 1);
 }
 
 int Exponentiation1(int number, int exp)
 {
-     return exp == 0 ? 1 : number * Exponentiation(number, exp - 1);
+    return exp == 0 ? 1 : number * Exponentiation(number, exp - 1);
 }
 int number = EnterNumber("Введите целое число: ");
 int exp = EnterNumber("Введите степень числа: ");
